@@ -818,6 +818,9 @@ Pod Template:
 
 Ou seja, como podemos notar, a revisão 1 é a versão 1.16.0 do Nginx e a revisão 2 é a versão 1.15.0 do Nginx.
 
+__OBSERVAÇÃO IMPORTANTE: O comando de rollback através do `rollout undo` afeta somente as configurações a nível de Pod. As configurações feitas a nivel de Deploy (como Replicas e Labels) não são afetadas neste comando e permanessem inalteradas.__
+
+
 Se você quiser fazer o rollback para a revisão 1, basta executar o seguinte comando:
 
 ```bash
